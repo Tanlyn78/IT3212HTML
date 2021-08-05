@@ -1,0 +1,139 @@
+
+html {
+    background-color: lightblue;
+    
+}
+h1 {
+    color: #101050;
+    background-color:#1235;
+    text-align: center;
+    font-size: 24;
+    position: relative;
+    column-span: all
+    
+}
+
+body {
+    background-color: aliceblue;
+    margin-left: auto;
+    margin-right:auto;
+    padding-bottom: 20px;
+        
+   }
+article {
+    padding: 20px;
+    display:inline-table;
+    position: relative;
+}
+
+p {
+    color: #4d3d20;
+    font-weight: bold;
+    padding: 20px;
+    
+}
+body > header > img {
+    display:block;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    border-top: #141313;
+    column-span:all
+}
+
+h2 {
+    color:#101050;
+    font-size: 20;
+}
+
+header {
+    font-size: 30;
+    color: darkslategrey;
+    text-align: center;
+    padding-bottom:20px;
+      
+}
+
+
+section {
+    margin-left: 20%;
+}
+
+li {
+    display: inline-block;
+    float: left;
+    padding: 20px;
+    border-style: inset;
+    padding-bottom: 40px;
+}
+
+/* visited link */
+a:visited {
+    color: darkblue;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: darkgray;
+}
+
+gallery {
+    padding-top: 40px;
+    object-position: left;
+    vertical-align: middle;    
+}
+
+gallery > img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+gallery > caption {
+    position:absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+
+}
+
+article {
+    display:inline;
+    padding-top: 10px;
+    vertical-align: middle;
+    object-position: center;
+}
+
+article > h2 {
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    align-content: center;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+table > h2 {
+    text-align: center;
+}
+
+section {
+    column-count: 3;
+    column-gap: normal;
+    column-rule-style:double;
+    column-width: auto;
+    column-fill: auto;
+}
