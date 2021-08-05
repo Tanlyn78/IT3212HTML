@@ -18,6 +18,7 @@ body {
     background-color: aliceblue;
     margin-left: auto;
     margin-right:auto;
+    padding:20px    
         
    }
 article {
@@ -81,4 +82,53 @@ a:hover {
 /* selected link */
 a:active {
     color: darkgray;
+}
+gallery {
+    padding-top: 40px;
+    object-position: left;
+    vertical-align: middle;    
+}
+
+gallery > img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+gallery > caption {
+    position:absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+
+}
+
+article {
+    display:inline;
+    padding-top: 10px;
+    vertical-align: middle;
+    object-position: center;
+}
+
+body > article > h2 {
+    text-align: left;
+}
+
+body > article > table {
+    border-style: solid
+    width: 80%;
+    align-content: center;
+}
+
+body > article > table, td, th {
+  border: 1px solid black;
+}
+
+section {
+    column-count: 3;
+    column-gap: normal;
+    column-rule-style:double;
+    column-width: auto;
+    column-fill: auto;
 }
