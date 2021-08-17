@@ -8,43 +8,65 @@
     <meta name="keywords" content="Tanna, html, css" />
     <title>Tanna's Page</title>
     <link rel="stylesheet" href="styles.css">
-
+    <script src="main.js"></script>
 </head>
     <!-- after the head and title, is the body and header with logo, paragraph and additional content -->
 
 <body>
     <header>
-        <h1 id="HOME"> TANNA'S PAGE<img src="Sunflower_logo.jpg" alt="Sunflower" width="50"
-    height="57"/></h1>
+        <h1 id="HOME"> TANNA'S PAGE<img src="media/Sunflower_logo.jpg" alt="Sunflower" width="50"
+                                        height="57"/></h1>
         <nav>
             <ul>
-            <li><a href="http://abouttannaspage.infinityfreeapp.com/about.html">ABOUT US</a></li>
-            <li><a href="http://servicestannaspage.infinityfreeapp.com/Services.html">SERVICES</a></li>
-            <li><a href="http://contactustannaspage.infinityfreeapp.com/Contactus.html">CONTACT US</a></li>
-            <li><a href="http://gallerytannaspage.infinityfreeapp.com/gallery.html">GALLERY</a></li>
+            <li><a href="/about.html">ABOUT US</a></li>
+            <li><a href="/Services.html">SERVICES</a></li>
+            <li><a href="/Contactus.html">CONTACT US</a></li>
+            <li><a href="/gallery.html">GALLERY</a></li>
             <li><a href="https://www.facebook.com/tanlyn">FACEBOOK</a></li>
             </ul>
         </nav>
     </header>
-   
-<gallery>
-  <a href="Scenery.jpg">
-    <img src="Scenery.jpg" alt="Nightfall" width="400" height="200">
-  </a>
-  <caption>Nightfall over the drive to the mountain</caption>
+<!--image files in table format to display consistency across images in page - without, it was sprinkled all over the page-->
+    <div class="gallery">
+        <table class="gallery-table">
+            <tr class="gallery-row">
+                <td>
+                <a href="media/Scenery.jpg">
+                    <img src="media/Scenery.jpg" alt="Nightfall" width="200" height="100">
+                    <figcaption>Nightfall at Mt. Rainier</figcaption>
+                </a>
+                </td>
+                <td>
+                    <a href="media/sthelens.jpg">
+                        <img src="media/sthelens.jpg" alt="St. Helens" width="200" height="100">
+                        <figcaption>Mt. St. Helens on a clear day</figcaption>
+                    </a>
+                </td>
+                <td>
+                    <a href="media/Dustydog.jpg">
+                        <img src="media/Dustydog.jpg" alt="Dusty" width="150" height="200">
+                        <figcaption>Best looking dog on the planet</figcaption>
+                    </a>
 
-  <a href="sthelens.jpg">
-    <img src="sthelens.jpg" alt="St. Helens" width="400" height="200">
-  </a>
-  <caption>Mount St. Helens on a clear day</caption>
-
-  <a href="Dustydog.jpg">
-    <img src="Dustydog.jpg" alt="Dusty" width="300" height="400">
-  </a>
-  <caption>Close-up of the dog</caption>
-</gallery>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!--used div class iframe to pull in video from url (youtube) to embed video -->
+<div class="iframe">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xiA5wlfwRQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    Video is not supported by your browser</iframe>
+    
+ </div>
+    <!--audio file container in div makes it easy to center - without it the audio file would not center on page-->
+    <div class="audio-container">
+<audio controls>
+    <source src="media/sample4.mp3" type=audio/mp3>
+    Audio is not supported in your browser
+    </audio>
+</div>
      
 </body>
-<footer>Tanna's Page &#8226;<a href="http://tannaspage.infinityfreeapp.com#ABOUT">ABOUT</a>&#8226; <a href="http://tannaspage.infinityfreeapp.com#HOME">HOME</a>&#8226; <a href="https://www.facebook.com/tanlyn">FACEBOOK</a>&#8226; <a href=http://tannaspage.infinityfreeapp.com#CONTACT/><a>CONTACT ME</a> &#8226; Copyright &copy;  &#8226; Tacoma, WA &#8226; 888-111-2222 
+<footer>Tanna's Page &#8226;<a href="/about.html">ABOUT US</a>&#8226; <a href="/Services.html">SERVICES</a>&#8226; <a href="/gallery.html">GALLERY</a>&#8226;<a href="https://www.facebook.com/tanlyn">FACEBOOK</a>&#8226; <a href="/Contactus.html">CONTACT US</a> &#8226; Copyright &copy;  &#8226; Tacoma, WA &#8226; 888-111-2222 
 </footer>
 </html>

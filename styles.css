@@ -1,26 +1,25 @@
-
 html {
     background-color: lightblue;
-    
+
 }
 
 h1 {
     color: #101050;
     background-color:#1235;
     text-align: center;
-    font-size: 24;
+    font-size: 24px;
     position: relative;
     column-span: all
-    
+
 }
 
 body {
     background-color: aliceblue;
     margin-left: auto;
     margin-right:auto;
-    padding:20px    
-        
-   }
+    padding:20px
+
+}
 article {
     padding: 20px;
     display:inline-table;
@@ -31,11 +30,11 @@ p {
     color: #4d3d20;
     font-weight: bold;
     padding: 20px;
-    
+
 }
 body > header > img {
     display:block;
-    width: 100%;
+    max-width: 80%;
 }
 
 footer {
@@ -46,11 +45,11 @@ footer {
 
 h2 {
     color:#101050;
-    font-size: 20;
+    font-size: 20px;
 }
 
 header {
-    font-size: 30;
+    font-size: 24px;
     color: darkslategrey;
     text-align: center;
     padding:20px;
@@ -63,10 +62,9 @@ section {
 
 li {
     display: inline-block;
-    float: center;
-    padding: 20px;
+    /*float: center;*/
     border-style: inset;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 /* visited link */
@@ -83,20 +81,17 @@ a:hover {
 a:active {
     color: darkgray;
 }
-gallery {
-    padding-top: 40px;
-    object-position: left;
-    vertical-align: middle;    
+.gallery-table {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-gallery > img {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
+.gallery-table td {
+    padding: 25px;
 }
 
-gallery > caption {
+
+.gallery > .caption {
     position:absolute;
     bottom: 8px;
     right: 16px;
@@ -116,19 +111,73 @@ body > article > h2 {
 }
 
 body > article > table {
-    border-style: solid
+    border-style: solid;
+    border-collapse: collapse;
     width: 80%;
-    align-content: center;
 }
 
-body > article > table, td, th {
-  border: 1px solid black;
+body > article > table > th, tr, td {
+    border-style: solid;
+    border: 1px solid black;
 }
 
-section {
+/*body > article > table, td, th {*/
+/*    border: 1px solid black;*/
+/*}*/
+
+.stories {
     column-count: 3;
     column-gap: normal;
     column-rule-style:double;
     column-width: auto;
     column-fill: auto;
 }
+iframe {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+        
+}
+
+.gallery {
+    box-sizing: content-box;
+    resize: horizontal;
+    
+}
+
+.iframe {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+audio {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+div {
+    text-align: center;
+}
+
+form {
+    padding:20px;
+    background-color: gainsboro;
+}
+
+legend {
+    background: #1F497D;
+    color: #fff;
+    padding: 5px 10px ;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
